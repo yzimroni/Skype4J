@@ -70,7 +70,7 @@ public class Endpoints {
     public static final Endpoints SEND_MESSAGE_URL = new Endpoints(
             "https://%sclient-s.gateway.messenger.live.com/v1/users/ME/conversations/%s/messages").cloud().regtoken();
     public static final Endpoints MODIFY_MEMBER_URL = new Endpoints(
-            "https://%sclient-s.gateway.messenger.live.com/v1/threads/%s/members/%s").cloud().regtoken();
+            "https://%sclient-s.gateway.messenger.live.com/v1/threads/%s/members/8:%s").cloud().regtoken();
     public static final Endpoints CONVERSATION_PROPERTY_GLOBAL = new Endpoints(
             "https://%sclient-s.gateway.messenger.live.com/v1/threads/%s/properties?name=%s").cloud().regtoken();
     public static final Endpoints ADD_MEMBER_URL = new Endpoints(
