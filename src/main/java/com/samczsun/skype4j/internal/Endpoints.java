@@ -320,6 +320,7 @@ public class Endpoints {
         }
 
         public E_TYPE connect(String method, byte[] rawData) throws ConnectionException {
+            header("Accept", "application/json");
             if (!cookies.isEmpty()) {
                 header("Cookie", serializeCookies(cookies));
             }
